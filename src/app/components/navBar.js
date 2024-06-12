@@ -8,7 +8,7 @@ const NavBar = () => {
       src={Logo}
       width={150}
       height={75}
-      alt="Picture of the author"
+      alt="logo"
     />
         <ul className="flex mt-3">
             <li className="mr-2 text-gray-500 font-[600]">HOME</li>
