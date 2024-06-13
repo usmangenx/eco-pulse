@@ -3,7 +3,7 @@ import HeroImage from "/public/AdobeStock_815178598.jpeg"
 
 const Hero = () => {
   return (
-    <div className="flex justify-between mt-14">
+    <div id="home" className="flex justify-between mt-14">
         <div>
             <p1 className="text-xl font-[600] text-gray-400">EMPOWERING ENVIRONMENTAL CONSERVATION</p1>
             <h1 className="text-9xl font-[500]">Join Us in</h1>

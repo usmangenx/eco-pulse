@@ -6,6 +6,7 @@ const About = () => {
     <div>
       <div className="pt-24 relative w-full  mx-auto">
         <Image
+          id="about"
           className="rounded-3xl w-full h-auto"
           src={about}
           width={800}

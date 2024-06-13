@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Logo from "/public/logo.JPG"
+import Link from "next/link"
 
 const NavBar = () => {
   return (
@@ -11,8 +12,8 @@ const NavBar = () => {
       alt="logo"
     />
         <ul className="flex mt-3">
-            <li className="mr-2 text-gray-500 font-[600]">HOME</li>
-            <li className="ml-2 text-gray-500 font-[600]">ABOUT US</li>
+           <Link href="#home"><li className="mr-2 text-gray-500 font-[600]">HOME</li></Link> 
+           <Link href="#about"><li className="ml-2 text-gray-500 font-[600]">ABOUT US</li></Link> 
         </ul>
         <button className="bg-[#4baa04] px-5 rounded-3xl text-white">Join Us</button>
     </div>
