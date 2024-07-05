@@ -20,7 +20,7 @@ const Hero = () => {
           />
           <button
             type="submit"
-            className="px-4 py-2 bg-[#4baa04] text-white rounded-r-3xl hover:bg-[#4baa04] focus:outline-none focus:ring-2 focus:ring-[#4baa04]"
+            className="px-8 py-2 bg-[#4baa04] text-white text-sm rounded-r-3xl hover:bg-[#4baa04] focus:outline-none focus:ring-2 focus:ring-[#4baa04]"
           >
             Sign Up
           </button>

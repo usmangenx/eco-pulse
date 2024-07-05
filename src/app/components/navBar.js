@@ -8,8 +8,8 @@ const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="relative md:flex border-r-2 border-b-2 border-l-2 p-7 border-gray-200 rounded-b-3xl">
-      <div className="flex justify-between items-center">
+    <div className="relative grid grid-cols-3 items-center border-r-2 border-b-2 border-l-2 p-7 border-gray-200 rounded-b-3xl">
+      <div className="flex justify-between items-center col-span-3 md:col-span-1">
         <Image
           src={Logo}
           width={150}
@@ -36,17 +36,20 @@ const NavBar = () => {
           </svg>
         </button>
       </div>
-      <ul className={`flex flex-col md:flex-row items-center ${menuOpen ? "block" : "hidden"} md:flex mt-3 md:mt-0`}>
+      <ul className={`col-span-3 md:col-span-1 flex flex-col md:flex-row justify-center items-center ${menuOpen ? "block" : "hidden"} md:flex mt-3 md:mt-0`}>
         <Link href="#home">
-          <li className="ml-0 md:ml-20 text-gray-500 font-[600]">HOME</li>
+          <li className="text-gray-500 font-[600] md:mx-4">HOME</li>
         </Link>
         <Link href="#about">
-          <li className="ml-0 md:ml-4 text-gray-500 font-[600]">ABOUT US</li>
+          <li className="text-gray-500 font-[600] md:mx-4">ABOUT US</li>
         </Link>
-        <li className="ml-0 md:ml-20 mt-2 md:mt-0">
+        <li className="md:hidden mt-2 md:mt-0">
           <button className="bg-[#4baa04] px-5 rounded-3xl text-white">Join Us</button>
         </li>
       </ul>
+      <div className="hidden md:flex col-span-3 md:col-span-1 justify-end mt-2 md:mt-0">
+        <button className="bg-[#4baa04] px-5 rounded-3xl text-white">Join Us</button>
+      </div>
     </div>
   );
 };
