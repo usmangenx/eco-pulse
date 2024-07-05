@@ -48,7 +48,7 @@ const NavBar = () => {
         </li>
       </ul>
       <div className="hidden md:flex col-span-3 md:col-span-1 justify-end mt-2 md:mt-0">
-        <button className="bg-[#4baa04] px-5 rounded-3xl text-white">Join Us</button>
+        <button className="bg-[#4baa04] px-5 py-3 rounded-3xl text-white">Join Us</button>
       </div>
     </div>
   );
